@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: #7FA25A;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	background-color: #7FA25A;
+	color: white;
+	align-items: center;
+}
+
+.home {
+	justify-content: flex-start;
+	text-decoration: none;
+	color: white;
+}
+
+.home a {
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+	font-size: 1.5rem;
+	
+}
+
+.nav-links {
+	justify-content: flex-end;
+	padding: 10px;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: white;
+	padding: 20px;
+	font-size: 1.5rem;
+}
