@@ -6,7 +6,7 @@
 body {
 	margin: 0;
 	background-color: #7FA25A;
-	font-family: 'Inter', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 nav {
@@ -46,7 +46,7 @@ nav {
 	color: white;
 	padding: 20px;
 	font-size: 1.5rem;
-	font-weight: 700;
+	font-weight: 400;
 }
 
 .nav-links-small {
@@ -65,7 +65,7 @@ nav {
 		color: white;
 		padding: 20px;
 		font-size: 1.5rem;
-		font-weight: 700;
+		font-weight: 400;
 	}
 }
 
