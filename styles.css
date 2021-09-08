@@ -89,6 +89,9 @@ nav {
 		bottom: 0;
 		right: 0;
 	}
+	.about-container {
+		flex-direction: column;
+	}
 }
 
 .landing-page {
@@ -120,6 +123,7 @@ p {
 	margin-left: 40px;
 }
 
+
 .mobile-p a {
 	text-decoration: none;
 	color: #9B3738;
@@ -138,6 +142,27 @@ i {
 
 .social-icons {
 	right: 0;
+}
+
+.about-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.about {
+	width: 700px;
+	margin: auto;
+}
+
+.about-container p {
+	width: 50%;
+	font-size: 16px;
+}
+
+.about-container ul {
+	width: 50%;
+	font-size: 16px;
+	line-height: 2;
 }
 
 /*
