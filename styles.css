@@ -84,6 +84,11 @@ nav {
 	.landing-page h1 {
 		margin-left: 40px;
 	}
+	.social-icons {
+		position: fixed;
+		bottom: 0;
+		right: 0;
+	}
 }
 
 .landing-page {
@@ -124,3 +129,20 @@ p {
 .mobile-p a:hover {
 	color: #ABC17A;
 }
+
+i {
+	font-size: 30px;
+	padding: 25px;
+	color: #EADBC0;
+}
+
+.social-icons {
+	right: 0;
+}
+
+/*
+.contact {
+	background: #ABC17A;
+	padding: 50px;
+}
+*/
