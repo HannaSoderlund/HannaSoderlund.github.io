@@ -1,0 +1,19 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+
+.fa-twitter, .fa-linkedin, .fa-github {
+    padding:20px 20px;
+	font-size: 2rem;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+	
+}
+
+.fa-twitter:hover, .fa-github:hover, .fa-linkedin:hover {
+    color: #ABC17A;
+}
+
