@@ -10,6 +10,8 @@ body {
 	color: #EADBC0;
 }
 
+/* Navigation Bar */
+
 nav {
 	display: flex;
 	justify-content: space-between;
@@ -17,6 +19,8 @@ nav {
 	background-color: #7FA25A;
 	color: #EADBC0;
 	align-items: center;
+	width: 100%;
+	position: fixed;
 }
 
 .home {
@@ -53,13 +57,86 @@ nav {
 .nav-links-small {
 	display: none;
 	
-} 
+}
+
+/* Landing page */
+
+.landing-page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin-left: 25px;
+}
+
+img {
+	border-radius: 50%;
+	border: 2px solid #ABC17A;
+}
+
+
+.welcome-text {
+	margin-right: 80px;
+	max-width: 600px;
+}
+
+h1 {
+	font-size: 2rem;
+	margin-left: 20px;
+}
+
+p {
+	font-size: 1.2rem;
+	line-height: 2;
+	margin-left: 40px;
+}
 
 .mobile-p {
 	display: none;
 	line-height: 2;
 	margin left: 40px;
 }
+
+/* Smaller-screen only paragraph */
+
+.mobile-p a {
+	text-decoration: none;
+	color: #9B3738;
+	
+}
+
+.mobile-p a:hover {
+	color: #ABC17A;
+}
+
+/* Social icons */
+
+i {
+	font-size: 30px;
+	padding: 25px;
+	color: #EADBC0;
+}
+
+.social-icons {
+	right: 0;
+}
+
+/* About page */
+
+.about {
+	width: 70%;
+	margin: auto;
+	margin-bottom: 50px;
+	
+}
+
+.about-container p {
+	width: 100%;
+	font-size: 16px;
+	margin-left: 0;
+}
+
+/* Media query: smaller screens */
 
 @media screen and (max-width: 900px) {
 	.nav-links-large {
@@ -78,9 +155,10 @@ nav {
 		display: none;
 	}
 	
-	.mobile-p, .landing-page {
+	.mobile-p {
 		display: block;
 	}
+	
 	.landing-page h1 {
 		margin-left: 40px;
 	}
@@ -89,85 +167,18 @@ nav {
 		bottom: 0;
 		right: 0;
 	}
-	.about-container {
-		flex-direction: column;
+	.contact h2 {
+		text-align: center;
 	}
+
 }
 
-.landing-page {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 94vh;
-	margin-left: 25px;
-}
+/* Contact footer */
 
-img {
-	border-radius: 50%;
-	border: 2px solid #ABC17A;
-}
-
-.welcome-text {
-	margin-right: 80px;
-	max-width: 600px;
-}
-
-h1 {
-	font-size: 2rem;
-	margin-left: 20px;
-}
-
-p {
-	font-size: 1.2rem;
-	line-height: 2;
-	margin-left: 40px;
-}
-
-
-.mobile-p a {
-	text-decoration: none;
-	color: #9B3738;
-	
-}
-
-.mobile-p a:hover {
-	color: #ABC17A;
-}
-
-i {
-	font-size: 30px;
-	padding: 25px;
-	color: #EADBC0;
-}
-
-.social-icons {
-	right: 0;
-}
-
-.about-container {
+.contact {
+	background: #ABC17A;
+	padding: 50px;
 	display: flex;
 	justify-content: space-around;
 }
 
-.about {
-	width: 700px;
-	margin: auto;
-}
-
-.about-container p {
-	width: 50%;
-	font-size: 16px;
-}
-
-.about-container ul {
-	width: 50%;
-	font-size: 16px;
-	line-height: 2;
-}
-
-/*
-.contact {
-	background: #ABC17A;
-	padding: 50px;
-}
-*/
