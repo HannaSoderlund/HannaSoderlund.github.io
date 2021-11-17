@@ -5,7 +5,7 @@
 
 body {
 	margin: 0;
-	background-color: #7FA25A;
+	background-color: #699C60;
 	font-family: 'Open Sans', sans-serif;
 	color: #EADBC0;
 }
@@ -15,7 +15,7 @@ nav {
 	display: flex;
 	justify-content: space-between;
 	padding: 10px;
-	background-color: #7FA25A;
+	background-color: #699C60;
 	color: #EADBC0;
 	align-items: center;
 }
@@ -26,7 +26,7 @@ nav {
 }
 
 .nav-links a:hover {
-	color: #ABC17A;
+	color: #5F689B;
 }
 
 .nav-links a {
@@ -36,11 +36,6 @@ nav {
 	font-size: 1.5rem;
 	font-weight: 100;
 }
-/*.home {*/
-/*	justify-content: flex-start;*/
-/*	text-decoration: none;*/
-/*	color: white;*/
-/*}*/
 
 .home a {
 	text-decoration: none;
@@ -185,7 +180,7 @@ img {
 	.mobileText a {
 		text-decoration: none;
 		font-weight: 200;
-		color: black;
+		color: white;
 	}
 	.aboutMe p {
 		font-size: 18px;
