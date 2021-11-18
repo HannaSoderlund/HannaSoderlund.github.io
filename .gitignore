@@ -3,12 +3,15 @@ bin-debug/
 bin-release/
 [Oo]bj/
 [Bb]in/
+.DS_Store
+.idea/
+package-lock.json
 
 # Other files and folders
 .settings/
 
 # Executables
-*.swf
+*.swfgit add
 *.air
 *.ipa
 *.apk

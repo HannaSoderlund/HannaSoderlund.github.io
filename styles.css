@@ -74,7 +74,6 @@ img {
 	width: 80%;
 	height: auto;
 	border-radius: 10%;
-	/*box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);*/
 	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 	border:dashed 2px #41403E;
 }
@@ -147,6 +146,12 @@ img {
 .card p {
 	font-size: 18px;
 	font-weight: 100;
+	height: 230px;
+}
+
+.projectLinkContainer {
+	display: flex;
+	justify-content: center;
 }
 
 .mobileText {
@@ -190,9 +195,20 @@ img {
 		display: flex;
 		justify-content: space-evenly;
 	}
+	.portfolioHeader p {
+		font-size: 16px;
+		margin: 30px;
+	}
+	.card {
+		padding: 30px;
+		min-width: 400px;
+	}
+	.card p {
+		font-size: 16px;
+	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
 	.home a {
 		display: none;
 	}
@@ -219,5 +235,21 @@ img {
 		position: static;
 		display: flex;
 		justify-content: space-around;
+	}
+	.cards {
+		padding: 20px;
+	}
+	.card {
+		border: #699C60;
+		padding: 0 30px 0px 30px;
+		min-width: 320px;
+		display: flex;
+		flex-direction: column;
+	}
+	.card p {
+		height: auto;
+	}
+	.portfolioHeader p {
+		margin: 0 30px 0 30px;
 	}
 }
