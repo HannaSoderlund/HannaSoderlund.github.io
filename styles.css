@@ -1,0 +1,255 @@
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: #699C60;
+	font-family: 'Open Sans', sans-serif;
+	color: #EADBC0;
+}
+
+/*Landing page*/
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	background-color: #699C60;
+	color: #EADBC0;
+	align-items: center;
+}
+
+.nav-links {
+	justify-content: flex-end;
+	padding: 10px;
+}
+
+.nav-links a:hover {
+	color: #5F689B;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: #EADBC0;
+	padding: 20px;
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+
+.home a {
+	text-decoration: none;
+	color: #EADBC0;
+	padding: 20px;
+	font-size: 1.75rem;
+	font-weight: 100;
+}
+
+.socialIconContainer {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+i {
+	font-size: 30px;
+	padding: 25px;
+	color: #EADBC0;
+}
+
+.aboutMe {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+}
+
+.imageContainer {
+	position: relative;
+	width: 300px;
+	overflow: hidden;
+}
+
+img {
+	width: 80%;
+	height: auto;
+	border-radius: 10%;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	border:dashed 2px #41403E;
+}
+
+.aboutMeText {
+	max-width: 600px;
+}
+
+.aboutMe h1 {
+	font-size: 2rem;
+	font-weight: 200;
+}
+
+.aboutMe p {
+	font-size: 18px;
+	line-height: 2;
+	font-weight: 200;
+}
+
+/*Portfolio page*/
+.portfolio {
+	display: flex;
+}
+
+.portfolioHeader {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	margin: 50px;
+	max-width: 600px;
+	margin: auto;
+}
+
+.portfolioHeader h1 {
+	font-size: 3rem;
+	font-weight: 200;
+}
+
+.portfolioHeader p {
+	font-size: 20px;
+	font-weight: 100;
+}
+
+.portfolioContainer {
+
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 70px;
+}
+
+.card {
+	flex: 0 1 calc(25% - 1em);
+	padding: 40px;
+	min-width: 500px;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	border:dashed 2px #41403E;
+	margin: 20px;
+}
+
+.card h2 {
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.card p {
+	font-size: 18px;
+	font-weight: 100;
+	height: 230px;
+}
+
+.projectLinkContainer {
+	display: flex;
+	justify-content: center;
+}
+
+.mobileText {
+	display: none;
+}
+
+@media screen and (max-width: 980px) {
+	.imageContainer {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 690px) {
+	.home a {
+		display: none;
+	}
+	.nav-links a {
+		display: none;
+	}
+	.aboutMe {
+		display: flex;
+		margin: 35px;
+		justify-content: center;
+		align-items: center;
+		height: 70vh;
+	}
+	.mobileText {
+		display: block;
+		font-size: 18px;
+	}
+	.mobileText a {
+		text-decoration: none;
+		font-weight: 400;
+		color: #5F689B;
+	}
+	.aboutMe p {
+		font-size: 18px;
+	}
+	.socialIconContainer {
+		position: static;
+		display: flex;
+		justify-content: space-evenly;
+	}
+	.portfolioHeader p {
+		font-size: 16px;
+		margin: 30px;
+	}
+	.card {
+		padding: 30px;
+		min-width: 400px;
+	}
+	.card p {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.home a {
+		display: none;
+	}
+	.nav-links a {
+		display: none;
+	}
+	.aboutMe {
+		display: flex;
+		margin: 35px;
+	}
+	.mobileText {
+		display: block;
+		font-size: 16px;
+	}
+	.mobileText a {
+		text-decoration: none;
+		font-weight: 200;
+		color: black;
+	}
+	.aboutMe p {
+		font-size: 16px;
+	}
+	.socialIconContainer {
+		position: static;
+		display: flex;
+		justify-content: space-around;
+	}
+	.cards {
+		padding: 20px;
+	}
+	.card {
+		border: #699C60;
+		padding: 0 30px 0px 30px;
+		min-width: 320px;
+		display: flex;
+		flex-direction: column;
+	}
+	.card p {
+		height: auto;
+	}
+	.portfolioHeader p {
+		margin: 0 30px 0 30px;
+	}
+}
