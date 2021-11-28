@@ -65,7 +65,7 @@ img {
 	height: auto;
 	border-radius: 10%;
 	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-	border:dashed 2px #41403E;
+	border:dashed 1px #41403E;
 }
 
 .about-me-text {
@@ -104,7 +104,6 @@ i {
 .portfolio-header {
 	display: flex;
 	flex-flow: column;
-	justify-content: center;
 	align-items: center;
 	max-width: 600px;
 	margin: auto;
@@ -124,27 +123,27 @@ i {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding: 70px;
+	margin: 30px;
 }
 
 .card {
-	flex: 0 1 calc(25% - 1em);
+	display: flex;
+	flex-direction: column;
 	padding: 40px;
-	min-width: 500px;
+	max-width: 600px;
 	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-	border:dashed 2px #41403E;
 	margin: 20px;
+	background-color: #72A369;
 }
 
 .card h2 {
 	font-size: 20px;
-	font-weight: 400;
+	font-weight: 200;
 }
 
 .card p {
 	font-size: 18px;
 	font-weight: 100;
-	height: 230px;
 }
 
 .project-link-container {
@@ -154,6 +153,12 @@ i {
 
 .mobile-text {
 	display: none;
+}
+
+@media screen and (max-width: 1160px) {
+	.card {
+		max-width: 700px;
+	}
 }
 
 @media screen and (max-width: 980px) {
@@ -181,9 +186,9 @@ i {
 		font-size: 18px;
 	}
 	.mobile-text a {
-		text-decoration: none;
+		text-decoration: underline;
 		font-weight: 400;
-		color: #5F689B;
+		color: #EADBC0;
 	}
 	.about-me p {
 		font-size: 18px;
@@ -193,13 +198,24 @@ i {
 		display: flex;
 		justify-content: space-evenly;
 	}
+	.portfolio-container {
+		margin: 0 40px 0 40px;
+	}
+	.portfolio-header {
+		margin: 0 40px 30px 40px;
+	}
 	.portfolio-header p {
 		font-size: 16px;
-		margin: 30px;
+		margin: 0 45px 0 45px;
+	}
+	.cards {
+		padding: 0;
+		margin: 0;
 	}
 	.card {
 		padding: 30px;
-		min-width: 400px;
+		border: #699C60;
+		background-color: #72A369;
 	}
 	.card p {
 		font-size: 16px;
@@ -216,15 +232,16 @@ i {
 	.about-me {
 		display: flex;
 		margin: 35px;
+		height: 70vh;
 	}
 	.mobile-text {
 		display: block;
 		font-size: 16px;
 	}
 	.mobile-text a {
-		text-decoration: none;
-		font-weight: 200;
-		color: #5F689B;
+		text-decoration: underline;
+		font-weight: 400;
+		color: #EADBC0;
 	}
 	.about-me p {
 		font-size: 16px;
@@ -235,20 +252,30 @@ i {
 		justify-content: space-around;
 	}
 	.cards {
-		padding: 20px;
+		padding: 35px 0 35px 0;
 	}
 	.card {
 		border: #699C60;
-		padding: 0 30px 0px 30px;
-		min-width: 320px;
+		background-color: #699C60;
+		padding: 0;
+		margin: 20px 0 20px 0;
+		min-width: 300px;
 		display: flex;
 		flex-direction: column;
 	}
+	.card h2 {
+		margin: 0;
+	}
 	.card p {
 		height: auto;
+		padding: 0;
 	}
 	.portfolio-header p {
-		margin: 0 30px 0 30px;
+		margin: 0;
+	}
+	.portfolio-header {
+		align-items: flex-start;
+		margin: 0 40px 0 40px;
 	}
 }
 
