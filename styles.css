@@ -8,6 +8,7 @@ body {
 	background-color: #699C60;
 	font-family: 'Open Sans', sans-serif;
 	color: #EADBC0;
+	letter-spacing: 0.08em;
 }
 
 /*Navbar*/
@@ -19,15 +20,14 @@ nav {
 	background-color: #699C60;
 	color: #EADBC0;
 	align-items: center;
+	letter-spacing: 0.2em;
+	position: sticky;
+	top: 0;
 }
 
 .nav-links {
 	justify-content: flex-end;
 	padding: 10px;
-}
-
-.nav-links a:hover {
-	color: #5F689B;
 }
 
 .nav-links a {
@@ -36,6 +36,10 @@ nav {
 	padding: 20px;
 	font-size: 1.5rem;
 	font-weight: 100;
+}
+
+.nav-links a:hover {
+	color: #5F689B;
 }
 
 /*Landing page*/
