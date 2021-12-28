@@ -123,6 +123,16 @@ i {
 	font-weight: 100;
 }
 
+a {
+	text-decoration: none;
+	color: #EADBC0;
+	font-weight: 400;
+}
+
+a:hover {
+	color: #5F689B;
+}
+
 .cards {
 	display: flex;
 	flex-wrap: wrap;

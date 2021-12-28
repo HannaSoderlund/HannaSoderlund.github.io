@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Hanna's Portfolio</title>
-    <link rel="stylesheet" href="styles.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="icons.css">
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="tab icon" type="image/jpg" href="assets/seedling.png"/>
 </head>
 
 <body>
@@ -17,17 +18,27 @@
             <a href="index.html">Hanna Söderlund</a>
         </div>
         <div class="nav-links">
-            <a href="assets/Hanna%20Soderlund%20-%20resume%20(3).pdf" target="_blank">Resume</a>
+            <a href="assets/HannaSoderlundResume.pdf" target="_blank">Resume</a>
         </div>
     </nav>
 
     <header class="portfolio-header">
         <h1>Portfolio</h1>
-        <p>I am currently studying software development at iO Academy, where I have worked on a range of projects as part of a Scrum team. Each project was completed during a four day sprint. We used Git and GitHub for version control, and code reviewed each other’s code at the end of each task and story. Below are my favourites to date!</p>
+        <p>I have recently finished a 16 week <a href="https://io-academy.uk/courses/full-stack-track/">full-stack software development bootcamp at iO Academy</a>, where I have worked on a range of projects as part of a Scrum team. Each project was completed during a four day sprint. We used Git and GitHub for version control, and code reviewed each other’s code at the end of each task and story. Below are my favourites to date!</p>
     </header>
 
     <section class="portfolio-container">
         <section class="cards">
+
+            <article class="card">
+                <h2>Stock Tracking API (Node.JS, Express, MySQL, Jest)</h2>
+                <p>This was my final project, completed in the last week at iO Academy. Working in a Scrum team of four, we built a stock management API allowing the user, a warehouse manager, to add, edit, delete and retrieve product data and manage customer orders. 
+                    As we knew our data would be relational, we chose to use an SQL database. To make the API scalable, we generated a new SKU for each new product, and a unique order number for each new order. We also built functionality allowing the user to add a new order containing multiple products in varying quantities, which automatically updates the stock quantity available. To avoid duplicating data in the database, the API checks whether a customer already exists before adding an order. We used the Controller Services pattern for the architecture, and used Jest for unit testing where possible. 
+                    </p>
+                <div class="project-link-container">
+                    <a href="https://github.com/iO-Academy/2021-aug-stock" class="social-icon" target="_blank"> <i class="fa fa-github"></i></a>
+                </div>
+            </article>
 
             <article class="card">
                 <h2>Academy Portal (PHP with Slim, MySQL, JavaScript)</h2>
@@ -60,17 +71,7 @@
                 <h2>Todo App (Node.JS, Express, MongoDB)</h2>
                 <p>To get to know Node.JS, Express and MongoDB, I built a simple todo application with a (stressful) Christmas theme. This app lets the user add, mark complete and delete tasks, as well as add custom “tags” to each task. I used the Controller Services pattern for the backend architecture, and really enjoyed using Node with Express for routing. Though this tiny app certainly doesn’t use MongoDB to its full potential, it was a joy to work with and I hope to use it more in the future. With more time I would’ve liked to refactor the frontend using React (and the UX leaves a lot to be desired!).</p>
                 <div class="project-link-container">
-                    <a href="" class="social-icon" target="_blank"> <i class="fa fa-link"></i></a>
                     <a href="https://github.com/HannaSoderlund/stressful-todo-app" class="social-icon" target="_blank"> <i class="fa fa-github"></i></a>
-                </div>
-            </article>
-
-            <article class="card">
-                <h2>Stock Tracking API (Node.JS, Express, MongoDB)</h2>
-                <p>Work in progress! My team is building a RESTful API using Node.js and Express with the Controller-Services design pattern. The user, a warehouse manager, will be able to add, view, edit and delete products to manage inventory and keep track of stock levels. There will also be functionality to update stock levels based on product SKU, and add and cancel orders. We will be writing API documentation for all routes and parameters, and use JEST for testing.</p>
-                <div class="project-link-container">
-                    <a href="" class="social-icon" target="_blank"> <i class="fa fa-link"></i></a>
-                    <a href="" class="social-icon" target="_blank"> <i class="fa fa-github"></i></a>
                 </div>
             </article>
 
