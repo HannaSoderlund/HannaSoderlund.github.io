@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Stock Tracking API</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="../icons.css" type="text/css">
+	<link rel="stylesheet" href="../projectStyles.css" type="text/css">
+	<link rel="tab icon" type="image/jpg" href="../assets/seedling.png"/>
+</head>
+
+<body>
+	<nav>
+		<div class="home">
+			<a href="../index.html">Hanna Söderlund</a>
+		</div>
+		<div class="nav-links">
+			<a href="../portfolio.html">Portfolio</a>
+			<a href="../assets/HannaSoderlundResume.pdf" target="_blank">Resume</a>
+		</div>
+	</nav>
+
+	<section class="project-page">
+	<section class="about-project">
+		<div class="image-container">
+			<img src="../assets/projectImages/Stock tracking API (1).png" alt="architecture - Stock Tracking API">
+			<img src="../assets/projectImages/SQLdiagram.png" alt="SQL diagram - Stock Tracking API">
+		</div>
+		<div class="about-project-text">
+			<h2>Stock Tracking API</h1>
+			<div class="project-container">
+				<h4>Node.js, Express, MySQL, Jest, HTML, CSS, Git</h5>
+				<a href="https://github.com/iO-Academy/2021-aug-stock" class="social-icon" target="_blank"> <i class="fa fa-github"></i></a></div>
+			<p>This was my final project, completed in the last week at iO Academy. Working in a Scrum team of four, we built a stock management API allowing the user, a warehouse manager, to add, edit, delete and retrieve product data and manage customer orders. 
+				As we knew our data would be relational, we chose to use an SQL database. To make the API scalable, we generated a new SKU for each new product, and a unique order number for each new order. We also built functionality allowing the user to add a new order containing multiple products in varying quantities, which automatically updates the stock quantity available. To avoid duplicating data in the database, the API checks whether a customer already exists before adding an order. We used the Controller Services pattern for the architecture, and Jest for unit testing where possible.</p>
+		</div>
+	</section>
+</section>
+
+</body>

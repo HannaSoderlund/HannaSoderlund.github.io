@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <title>Hanna's Portfolio</title>
@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="icons.css">
-    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="portfolioStyles.css" type="text/css" />
     <link rel="tab icon" type="image/jpg" href="assets/seedling.png"/>
 </head>
 
@@ -27,65 +27,56 @@
         <p>I have recently finished a 16 week <a href="https://io-academy.uk/courses/full-stack-track/">full-stack software development bootcamp at iO Academy</a>, where I have worked on a range of projects as part of a Scrum team. Each project was completed during a four day sprint. We used Git and GitHub for version control, and code reviewed each other’s code at the end of each task and story. Below are my favourites to date!</p>
     </header>
 
-    <section class="portfolio-container">
-        <section class="cards">
+<section class="hero-section">
+  <div class="card-grid">
 
-            <article class="card">
-                <h2>Stock Tracking API (Node.JS, Express, MySQL, Jest)</h2>
-                <p>This was my final project, completed in the last week at iO Academy. Working in a Scrum team of four, we built a stock management API allowing the user, a warehouse manager, to add, edit, delete and retrieve product data and manage customer orders. 
-                    As we knew our data would be relational, we chose to use an SQL database. To make the API scalable, we generated a new SKU for each new product, and a unique order number for each new order. We also built functionality allowing the user to add a new order containing multiple products in varying quantities, which automatically updates the stock quantity available. To avoid duplicating data in the database, the API checks whether a customer already exists before adding an order. We used the Controller Services pattern for the architecture, and used Jest for unit testing where possible. 
-                    </p>
-                <div class="project-link-container">
-                    <a href="https://github.com/iO-Academy/2021-aug-stock" class="social-icon" target="_blank"> <i class="fa fa-github"></i></a>
-                </div>
-            </article>
+    <a class="card" href="projects/stockTrackingApi.html">
+      <div class="card__background" style="background-image: url(assets/projectImages/StockTrackingSmall.png)"></div>
+      <div class="card__content">
+        <p class="card__category">Node.JS, Express, MySQL, Jest</p>
+        <h3 class="card__heading">Stock Tracking API</h3>
+      </div>
+    </a>
 
-            <article class="card">
-                <h2>Academy Portal (PHP with Slim, MySQL, JavaScript)</h2>
-                <p>We worked with two other student development teams on a legacy codebase - the iO Academy portal where academy admins can follow an applicant's journey through application stages. Our Scrum team first worked on fixing two existing bugs, and then built functionality to lock applicant stages to prevent deletion and make the portal safer to use. We also worked on improving the usability of an option select modal, making it clearer to the user where in the process an applicant currently is and what stage is next. The project was built using the PHP framework Slim using the MVC pattern, and used namespacing and autoloading in line with PSR-12. We unit tested with PHPUnit.</p>
-                <div class="project-link-container">
-                    <a href=" https://portal.dev.io-academy.uk/" class="social-icon" target="_blank"> <i class="fa fa-link"></i></a>
-                    <a href="https://github.com/iO-Academy/AcademyPortal" class="social-icon" target="_blank"> <i class="fa fa-github"></i></a>
-                </div>
-            </article>
+    <a class="card" href="projects/muppetsApp.html">
+        <div class="card__background" style="background-image: url(assets/projectImages/MuppetsSmall.png)"></div>
+        <div class="card__content">
+          <p class="card__category">PHP, MySQL</p>
+          <h3 class="card__heading">Muppets App</h3>
+        </div>
+    </a>
 
-            <article class="card">
-                <h2>Aptitude Test (React)</h2>
-                <p>For this project, we worked together with two other Academy dev teams on the same code base to rebuild a legacy project previously written in TypeScript. To make the application scalable, we created reusable components working in React. We fetched the data for the test using an existing RESTful API and built a dynamic front end to display the questions and answers using the React-Bootstrap component library and SCSS. To pass variables around our app we used useState() and props, and useEffect() to keep an eye on the score. Once the test was submitted the applicant’s score was calculated and sent as a POST request to update the database.</p>
-                <div class="project-link-container">
-                    <a href="https://aptitude-test.dev.io-academy.uk/" class="social-icon" target="_blank"> <i class="fa fa-link"></i></a>
-                    <a href="https://github.com/iO-Academy/aptitude-test-react" class="social-icon" target="_blank"> <i class="fa fa-github"></i></a>
-                </div>
-            </article>
+    <a class="card" href="projects/aptitudeTest.html">
+      <div class="card__background" style="background-image: url(assets/projectImages/AptitudeTestSmall.png)"></div>
+      <div class="card__content">
+        <p class="card__category">React</p>
+        <h3 class="card__heading">Aptitude Test</h3>
+      </div>
+    </a>
 
-            <article class="card">
-                <h2>Muppet App (PHP/MySQL)</h2>
-                <p>OOP project following SOLID principles, we built a PHP application for displaying information about a range of muppets on the front end. We used the Hydrator design pattern to interact with data from a MySQL database, and created functionality to search and generate a random muppet. We built error handling and wrote unit tests where possible. We pair programmed, and code reviewed each others’ work on finishing each task, with the Academy trainer code reviewing each story before merging into main. I particularly enjoyed creating the app architecture and working on the search functionality for the project.</p>
-                <div class="project-link-container">
-                    <a href="https://dev.io-academy.uk/projects/2021-aug/OOPMuppets/" class="social-icon" target="_blank"> <i class="fa fa-link"></i></a>
-                    <a href="https://github.com/iO-Academy/2021-aug-oopMuppets" class="social-icon" target="_blank"> <i class="fa fa-github"></i></a>
-                </div>
-            </article>
+    <a class="card" href="projects/academyPortal.html">
+      <div class="card__background" style="background-image: url(assets/projectImages/AcademyPortalSmall.png)"></div>
+      <div class="card__content">
+        <p class="card__category">PHP with Slim, MySQL, JavaScript</p>
+        <h3 class="card__heading">iO Academy Portal</h3>
+      </div>
+    </a>
+    
+    <a class="card" href="projects/snakeSweeper.html">
+      <div class="card__background" style="background-image: url(assets/projectImages/SnakeSweeperSmall.png)"></div>
+      <div class="card__content">
+        <p class="card__category">JavaScript game</p>
+        <h3 class="card__heading">Snakesweeper</h3>
+      </div>
+    </a>
+   
+    <a class="card" href="projects/stressfulTodoApp.html">
+      <div class="card__background" style="background-image: url(assets/projectImages/StressfulTodoSmall.png)"></div>
+      <div class="card__content">
+        <p class="card__category">Node.js, Express, MongoDB</p>
+        <h3 class="card__heading">Stressful Todo App</h3>
+      </div>
+    </a>
 
-            <article class="card">
-                <h2>Todo App (Node.JS, Express, MongoDB)</h2>
-                <p>To get to know Node.JS, Express and MongoDB, I built a simple todo application with a (stressful) Christmas theme. This app lets the user add, mark complete and delete tasks, as well as add custom “tags” to each task. I used the Controller Services pattern for the backend architecture, and really enjoyed using Node with Express for routing. Though this tiny app certainly doesn’t use MongoDB to its full potential, it was a joy to work with and I hope to use it more in the future. With more time I would’ve liked to refactor the frontend using React (and the UX leaves a lot to be desired!).</p>
-                <div class="project-link-container">
-                    <a href="https://github.com/HannaSoderlund/stressful-todo-app" class="social-icon" target="_blank"> <i class="fa fa-github"></i></a>
-                </div>
-            </article>
-
-            <article class="card">
-                <h2>Snake Sweeper (JavaScript game)</h2>
-                <p>I worked as part of a Scrum team to build a custom minesweeper-esque JavaScript game. The user was able to select the size grid to play on, as well as how many ‘mines’ to find. We built functionality to validate user input and then programmatically generate the board with randomised hit boxes. Using event handlers, a modal displayed on hit or miss. We built a ‘lives left’ counter and on finishing the game, the user was presented with the opportunity to play again with a new randomised deck. </p>
-                <div class="project-link-container">
-                    <a href="https://dev.io-academy.uk/projects/2021-aug/2021-aug-snakeSweeper/" class="social-icon" target="_blank"> <i class="fa fa-link"></i></a>
-                    <a href="https://github.com/iO-Academy/2021-aug-minesweeper" class="social-icon" target="_blank"> <i class="fa fa-github"></i></a>
-                </div>
-            </article>
-
-        </section>
-    </section>
-</body>
-
-</html>
+    </div>
+</section>

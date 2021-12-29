@@ -50,12 +50,12 @@ nav {
 	color: #5F689B;
 }
 
-/*Landing page*/
+/*Project page*/
 
-.home-page {
+.project-page {
     align-items: center;
     background-color: #72A369;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    border-radius: 70% 50% 70% 80% / 30% 30% 70% 70%;
     color: #18112E;
     display: flex;
     flex-direction: column;
@@ -71,7 +71,7 @@ nav {
 	font-weight: 100;
 }
 
-.about-me {
+.about-project {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -80,7 +80,7 @@ nav {
 
 .image-container {
 	position: relative;
-	width: 300px;
+	width: 400px;
 	overflow: hidden;
 }
 
@@ -88,36 +88,31 @@ img {
 	width: 80%;
 	height: auto;
 	border-radius: 10%;
-	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
-	border:dashed 1px #41403E;
 }
 
-.about-me-text {
+.about-project-text {
 	max-width: 600px;
 }
 
-.about-me h1 {
+.about-project h2 {
 	font-size: 2rem;
 	font-weight: 200;
+    margin: 0;
 }
 
-.about-me p {
+.about-project h4 {
+    font-weight: 200;
+    font-style: italic;
+}
+
+.about-project p {
 	font-size: 16px;
-	line-height: 2;
+	line-height: 1.8;
 	font-weight: 200;
 }
 
-/*Social icons*/
-.social-icon-container {
-	position: fixed;
-	bottom: 0;
-	right: 0;
-}
-
-i {
-	font-size: 30px;
-	padding: 25px;
-	color: #EADBC0;
+.project-container h4, .project-container a {
+    display: inline-block;
 }
 
 a {
@@ -130,16 +125,16 @@ a:hover {
 	color: #5F689B;
 }
 
-.mobile-text {
-	display: none;
+.project-link-container {
+	display: flex;
+	justify-content: center;
 }
 
-@media screen and (max-width: 980px) {
+/* Media queries */
+
+@media screen and (max-width: 1080px) {
 	.image-container {
 		display: none;
-	}
-	.home-page {
-		background-color: #699C60;
 	}
 }
 
@@ -150,69 +145,15 @@ a:hover {
 	.nav-links a {
 		display: none;
 	}
-	.about-me {
+	.about-project {
 		display: flex;
 		margin: 35px;
 		justify-content: center;
 		align-items: center;
-		height: 70vh;
+		height: 100%;
 	}
-	.mobile-text {
-		display: block;
-		font-size: 18px;
-	}
-	.mobile-text a {
-		text-decoration: underline;
-		font-weight: 400;
-		color: #EADBC0;
-	}
-	.about-me p {
-		font-size: 18px;
-	}
-	.social-icon-container {
-		position: static;
-		display: flex;
-		justify-content: space-evenly;
-	}
+    .project-page {
+    background-color: #699C60;
+    }
 }
 
-@media screen and (max-width: 420px) {
-	.home a {
-		display: none;
-	}
-	.nav-links a {
-		display: none;
-	}
-	.about-me {
-		display: flex;
-		margin: 35px;
-		height: 70vh;
-	}
-	.mobile-text {
-		display: block;
-		font-size: 16px;
-	}
-	.mobile-text a {
-		text-decoration: underline;
-		font-weight: 400;
-		color: #EADBC0;
-	}
-	.about-me p {
-		font-size: 16px;
-	}
-	.social-icon-container {
-		position: static;
-		display: flex;
-		justify-content: space-around;
-	}
-}
-
-@media screen and (max-width: 320px) {
-	.about-me {
-		display: flex;
-		margin: 35px;
-		justify-content: center;
-		align-items: center;
-		height: 90vh;
-	}
-}
